@@ -1,1 +1,3 @@
-console.log("Section.io is cool")
+function gotWeather({ temperature, humidity }) {
+  alert(`temperature: ${temperature}, humidity: ${humidity}`);
+}

@@ -35,7 +35,7 @@ http<span class="token punctuation">.</span><span class="token function">createS
 </code></pre>
 <p>Running this <code>fetch()</code> command in the console acts as if the website was sending the request.</p>
 <p>You should see a CORS error in your console, looking something like:</p>
-<pre><code>Access to fetch at 'https://cors1--nadivgold.repl.co/' from origin '**editor's note, please put the url that this article inside these single quotation marks**' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+<pre><code>Access to fetch at 'https://cors1--nadivgold.repl.co/' from origin '**editor's note, please put the url of this article inside these single quotation marks**' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
 </code></pre>
 <p>The asset we tried to request was the string “Section is cool” from the Node.js web server. Our request was blocked because the server did not explicitly give our website permission.</p>
 <p>To fix this issue, we can add the ‘Access-Control-Allow-Origin’ to our web server. This HTML header lets CORS know that we are okay with letting others request the asset. Just add</p>

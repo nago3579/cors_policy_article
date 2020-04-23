@@ -44,11 +44,11 @@ http<span class="token punctuation">.</span><span class="token function">createS
 <p>to the Node.js server before the write, or use this <a href="https://repl.it/@NadivGold/cors2">new replit link</a>.</p>
 <p>The star symbol in the second argument denotes that all requests are accepted. If we just wanted to give access to one site, replace the star with the url of that site.</p>
 <p>We can now run the same fetch request as above to access our string.</p>
-<p>If you’re using the replit version, use this fetch instead:</p>
+<p>If you’re using the new replit version, use this fetch instead:</p>
 <pre class=" language-javascript"><code class="prism  language-javascript"><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">"https://cors2--nadivgold.repl.co/"</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>req <span class="token operator">=&gt;</span> req<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>log<span class="token punctuation">)</span>
 </code></pre>
 <p>We should now see <code>Section is cool</code> in the console.</p>
 <h3 id="wrap-up">Wrap Up</h3>
 <p>The most important thing to remember when dealing with CORS is to drink responsibly.<br>
-The second most important thing is to remember is that, if you need something from another server, you also need permission.</p>
+The second most important thing is to remember is that, if you need something from another server, you also need that server’s permission.</p>
 
